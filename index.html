@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<input type="button" value="showConfirm" class="showConfirm" name="" >
+<input type="button" value="confirmCancel" class="confirmCancel" name="">
+<p></p>
+<script type="text/javascript" src="jquery-3.1.0.min.js"></script>
+<script type="text/javascript" src="commonality.js"></script>
+<script type="text/javascript">
+    $('.showConfirm').click(function(){
+        showConfirm('hint','content',function () {
+            $('p').html('Confirmed content')
+        });
+    });
+    $('.confirmCancel').click(function(){
+        confirmCancel('hint','content',function () {
+            $('p').html('Confirmed content')
+        },function () {
+            $('p').html('Cancel')
+        });
+    })
+</script>
+</body>
+</html>
