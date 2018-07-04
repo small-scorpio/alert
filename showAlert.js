@@ -5,8 +5,6 @@
  */
 
 
-
-//提示弹窗
 function includeLinkStyle() {
         var styles = '<style>'
         +'.ymodalAlertBody{background:#fff; border-radius: 4px; box-shadow: 0 0 10px rgba(0,0,0,0.2); width:300px; position:absolute; min-height:100px; left:50%; top:35%; margin-left:-150px; z-index: 90000;-moz-animation:bounce 0.8s 0s ease both;-webkit-animation:bounce 0.8s 0s ease both;animation:bounce 0.8s 0s ease both  }'
